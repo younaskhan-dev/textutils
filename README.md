@@ -1,3 +1,4 @@
+# A React-based text utility app that lets you manipulate and analyze text — convert case, count words/characters, remove extra spaces, and more.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
