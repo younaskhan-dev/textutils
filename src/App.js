@@ -6,6 +6,7 @@ import Alert from './components/Alert';
 import About from './components/About';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from './components/Footer';
 
 function App() {
   const [mode, setmode] = useState("light");
@@ -40,10 +41,9 @@ function App() {
       // document.title='Light mode enabled';
     }
   };
-
   return (
     <Router>
-      <Navbar title="textutils" about="about text" mode={mode} togglemode={togglemode} />
+      <Navbar title="My-Textutils" about="About" mode={mode} togglemode={togglemode} />
       <Alert Alert={alert} />
       <Routes>
         <Route path="/about" element={<About />} />
@@ -51,6 +51,7 @@ function App() {
           element={<TextForm heading="Hi! Textutils- word counter | character counter | time to read word :" mode={mode} showalert={showalert} />}
         />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

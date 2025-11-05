@@ -14,20 +14,56 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
-                <Link className="nav-link active " aria-current="page" to="/">Home</Link>
+                <Link className="nav-link " aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link " to="/about">{props.about}</Link>
               </li>
             </ul>
           </div>
-          <div className='color-palette bg-success rounded mx-1' onClick={() => { props.togglemode('success') }} style={{ height: 20 + 'px', width: 20 + 'px', cursor: 'pointer' }}></div>
-          <div className='color-palette bg-danger rounded' onClick={() => { props.togglemode('danger') }} style={{ height: 20 + 'px', width: 20 + 'px', cursor: 'pointer' }}></div>
-          <div className='color-palette bg-warning rounded mx-1' onClick={() => { props.togglemode('warning') }} style={{ height: 20 + 'px', width: 20 + 'px', cursor: 'pointer' }}></div>
-          <div className='color-palette bg-secondary rounded' onClick={() => { props.togglemode('secondary') }} style={{ height: 20 + 'px', width: 20 + 'px', cursor: 'pointer' }}></div>
-          <div className='color-palette bg-info rounded mx-1' onClick={() => { props.togglemode('info') }} style={{ height: 20 + 'px', width: 20 + 'px', cursor: 'pointer' }}></div>
-          <div className='color-palette bg-dark rounded mx-1' onClick={() => { props.togglemode('dark') }} style={{ height: 20 + 'px', width: 20 + 'px', cursor: 'pointer' }}></div>
-          <div className='color-palette bg-light rounded mx-1' onClick={() => { props.togglemode('light') }} style={{ height: 20 + 'px', width: 20 + 'px', cursor: 'pointer' }}></div>
+          <div className="d-flex flex-wrap justify-content-end align-items-center gap-2">
+            <div
+              className="bg-success rounded-circle"
+              onClick={() => props.togglemode('success')}
+              style={{ height: '22px', width: '22px', cursor: 'pointer' }}
+            ></div>
+
+            <div
+              className="bg-danger rounded-circle"
+              onClick={() => props.togglemode('danger')}
+              style={{ height: '22px', width: '22px', cursor: 'pointer' }}
+            ></div>
+
+            <div
+              className="bg-warning rounded-circle"
+              onClick={() => props.togglemode('warning')}
+              style={{ height: '22px', width: '22px', cursor: 'pointer' }}
+            ></div>
+
+            <div
+              className="bg-secondary rounded-circle"
+              onClick={() => props.togglemode('secondary')}
+              style={{ height: '22px', width: '22px', cursor: 'pointer' }}
+            ></div>
+
+            <div
+              className="bg-info rounded-circle"
+              onClick={() => props.togglemode('info')}
+              style={{ height: '22px', width: '22px', cursor: 'pointer' }}
+            ></div>
+
+            <div
+              className="bg-dark rounded-circle"
+              onClick={() => props.togglemode('dark')}
+              style={{ height: '22px', width: '22px', cursor: 'pointer' }}
+            ></div>
+
+            <div
+              className="bg-light border rounded-circle"
+              onClick={() => props.togglemode('light')}
+              style={{ height: '22px', width: '22px', cursor: 'pointer' }}
+            ></div>
+          </div>
 
         </div>
 
