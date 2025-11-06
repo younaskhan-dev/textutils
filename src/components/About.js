@@ -10,7 +10,7 @@ export default function About() {
       transition={{ duration: 0.6 }}
     >
       <div className="text-center ">
-        <h1 className="fw-bold text-primary">About TextUtils</h1>
+        <h1 className="fw-bold text-primary">About TextUtils And me</h1>
         <p className="lead text-dark my-5">
           Smart, fast, and developer-focused — a modern way to edit, analyze, and enhance text.
         </p>
